@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+<parameter name="Param1" value = "Hello"></parameter>
+  <test name="Test">
+  
+    <classes>
+      <class name="ParameterizedTests.ParameterizedTest"/>
+      <methods>
+      <include name="Test1"></include>
+      </methods>
+       
+    </classes>
+     </test> <!-- Test -->
+    <test name="test2">
+  <parameter name="Param2" value = "How are you"></parameter>
+    <classes>
+      <class name="ParameterizedTests.ParameterizedTest"/>
+      <methods>
+      <include name="test2"></include>
+      </methods>
+       
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
